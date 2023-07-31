@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "0xAE5VHCGMJlw25n2aiqaQnOBg9Us1YKgNfTxWyU7KY=",
+  "Source": "StudentFullstackApp",
+  "BasePath": "_content/StudentFullstackApp",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

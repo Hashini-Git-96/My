@@ -1,0 +1,30 @@
+<div class="container my-5">
+    <h1 class="mb-3">
+       Update  Student Details
+    </h1>
+    <form #form="ngForm" (ngSubmit)="editStudent()">
+        <div class="col-5 mb-3 " > 
+          <label for="id" class="form-label">Student Id</label>
+          <input readonly=true class="form-control" id="id" name="id" [(ngModel)]="editstudentDetails.id">
+          <label for="first-name" class="form-label">First Name</label>
+          <input type="text" class="form-control" id="first-name" name="firstName" [(ngModel)]="editstudentDetails.firstName">
+          <label for="last-name" class="form-label">Last Name</label>
+          <input type="text" class="form-control" id="last-name" name="lastName" [(ngModel)]="editstudentDetails.lastName">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" name="mobile" [(ngModel)]="editstudentDetails.email">
+          <label for="mobile" class="form-label">Mobile</label>
+          <input type="number" class="form-control" id="mobile" name ="email" [(ngModel)]="editstudentDetails.mobile">
+          <label for="nic" class="form-label">Nic</label>
+          <input type="text" class="form-control" id="nic" name="nic" [(ngModel)]="editstudentDetails.nic">
+          <label for="date-of-birth" class="form-label">Date of birth</label>
+          <input type="text" class="form-control" id="date-of-birth" name ="dateOfBirth" [(ngModel)]="editstudentDetails.dateOfBirth">
+          <label for="address" class="form-label">address</label>
+          <input type="text" class="form-control" id="address" name="address" 
+          [(ngModel)]="editstudentDetails.address">
+       </div>
+       
+        <button type="submit" class="btn btn-primary mt-3">Submit</button>
+        <button type="button" class="btn btn-danger mt-3" (click)="deleteStudent(editstudentDetails.id)">Delete</button>
+      </form>
+    
+    </div>

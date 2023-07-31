@@ -1,0 +1,28 @@
+<div class="container my-5">
+<h1 class="mb-3">
+   Create Student
+</h1>
+<form #form="ngForm" (ngSubmit)="addStudent()">
+    <div class="col-5 mb-3 " > 
+      <label for="first-name" class="form-label">First Name</label>
+      <input type="text" class="form-control" id="first-name" name="FirstName" [(ngModel)]="addstudentDetails.firstName">
+      <label for="last-name" class="form-label">Last Name</label>
+      <input type="text" class="form-control" id="last-name" name="LastName" [(ngModel)]="addstudentDetails.lastName">
+      <label for="email" class="form-label">Email</label>
+      <input type="email" class="form-control" id="email" name="Mobile" [(ngModel)]="addstudentDetails.email">
+      <label for="mobile" class="form-label">Mobile</label>
+      <input type="number" class="form-control" id="mobile" name ="Email" [(ngModel)]="addstudentDetails.mobile">
+      <label for="nic" class="form-label">Nic</label>
+      <input type="text" class="form-control" id="nic" name="Nic" [(ngModel)]="addstudentDetails.nic">
+      <label for="date-of-birth" class="form-label">Date of birth</label>
+      <input type="text" class="form-control" id="date-of-birth" name ="DateOfBirth" [(ngModel)]="addstudentDetails.dateOfBirth">
+      <label for="address" class="form-label">address</label>
+      <input type="text" class="form-control" id="address" name="Address" 
+      [(ngModel)]="addstudentDetails.address">
+   </div>
+   
+    <button type="submit" class="btn btn-primary">Submit</button>
+    
+  </form>
+
+</div>

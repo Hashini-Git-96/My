@@ -1,0 +1,20 @@
+
+
+<div class="card"  style="width: 20rem;" *ngFor="let student of stu">
+  <img src="..." class="card-img-top" alt="...">
+    <div class="card-body" >
+      <h5 class="card-title" >Student Card</h5>
+    
+      <div  class="card-body" >
+       <p>student ID: {{student.id}}</p>
+       <p>student first name: {{student.firstName}}</p>
+       <p>student last name: {{student.lastName}}</p>
+       <p>student mobile: {{student.mobile}}</p>
+       <p>student email: {{student.email}}</p>
+       <p>student national id: {{student.nic}}</p>
+       <p>student address : {{student.address}}</p>
+       <td><a  [routerLink]="['/students','edit',student.id]">view student</a></td>
+    </div>
+   
+  </div>
+
